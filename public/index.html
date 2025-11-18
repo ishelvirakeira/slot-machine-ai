@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Slot Machine</title>
+</head>
+<body> 
+  <section class="game">
+    <h1>Tennis Slot Machine</h1>
+    <h2>Spin To Win! YAAAH!</h2>
+    <h3>Match All and Win Points</h3>
+
+    <div class="roll">
+      <div class="bal">Balance: $<span id="balance">100</span></div>
+      <div class="bal">Bet: $<span id="bet">10</span></div>
+      <div class="betcontrols">
+        <button onclick="betMin()" class="btnmin">Bet Min</button>
+        <button onclick="betMax()" class="btnmax">Bet Max</button>
+      </div>
+    </div>
+
+    <form class="stage" onsubmit="return false;"> <!--referenced from stackoverflow-->
+      <div id="first" class="pane"></div>
+      <div id="middle" class="pane"></div>
+      <div id="last" class="pane"></div>
+    </form>
+
+  
+    <section class="controls"><!--source: https://webdesign.tutsplus.com/how-to-create-a-slot-machine-game-in-vanilla-javascript--cms-108974t-->
+      <button id="spinBtn" onclick="clickToSpin()" class="btnspin">Spin</button>
+      <button id="stopBtn" class="btnstop">Stop</button>
+    </section>
+
+    <button id="aiBetBtn" class="btnAiBet">I consult AI regarding my next bet</button>
+    <div id="aiBetOutput"></div>
+
+    <!-- Status / reset -->
+    <h4 id="placeToSee">100</h4>
+    <button onclick="clearScore()" class="btnreset">Clean To Start</button>
+  </section>
+
+  <span id="message"></span>
+
+  <script src="main.js"></script>
+</body>
+</html>

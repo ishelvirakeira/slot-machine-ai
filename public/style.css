@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+.roll::after, .stage::after, .controls::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.game{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    background-color: rgb(26, 55, 26);
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.roll{
+
+    width: 80%;
+    margin: 10px auto 20px;
+    padding: 10px 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: black;
+}
+
+.betcontrols .btnmin, .betcontrols .btnmax{
+    float: left;
+    width: 48%;
+}
+
+.betcontrols .btnmin{
+    margin-right: 4%;
+}
+.stage{
+    width: 80%;
+    height: 260px;
+    margin: 0 auto;
+    border: 0;
+}
+.pane{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pane:last-child{
+    margin-right: 0;
+}
+
+.controls{
+    width: 60%;
+    margin: 16px auto;
+}
+
+.controls .btnspin, .controls .btnstop{
+    float: left;
+    width: 48%;
+}
+
+.controls .btnspin{
+    margin-right: 4%;
+}
+
+button{
+    width: 15%;
+    height: 40px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+button:disabled{
+  opacity: .6;
+  cursor: not-allowed;
+}
+.btnspin{ 
+    background-color: green; 
+}
+.btnstop{ 
+    background-color: orange; 
+}
+.btnAiBet {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  width:40%;
+  height:10%;
+}
+
+#aiBetOutput {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.btnreset{
+  font-size: 0.5em;
+  width: 25%;
+}
+
+
+h4{
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: grid;
+  place-items: center;
+}
+h3{ 
+    font-size: 1em; 
+}
+h2{ 
+    color: yellow; 
+}
+#message{
+  display: block;
+  width: 80%;
+  margin: 10px auto 0;
+  min-height: 1.5em;
+  color: gold;
+  font-size: .8em;
+  text-align: center;
+}
+
+/* Tennis pictures */ /*got some help from Innocent with the background pictures of the tennis players*/
+.ten1{
+  background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Roger_Federer_2.jpg");
+  object-fit: cover;
+}
+.ten2{
+  background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Nadal-2006.2.jpg");
+  object-fit: cover;
+}
+.ten3{
+  background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Novak_Djokovic_(49745016421).jpg");
+  object-fit: cover;
+}
+.ten4{
+  background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Serena_Williams_US_Open_2013.jpg");
+  object-fit: cover;
+}
+.ten5{
+  background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Naomi_Osaka_Australian_Open_2020.jpg");
+  object-fit: cover;
+}
+.ten6{
+  background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Carlos_Alcaraz_2025_FO.jpg");
+  object-fit: cover;
+}
+.ten7{
+  background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Iga_%C5%9Awi%C4%85tek_(2023_US_Open)_09.jpg");
+  object-fit: cover;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px){
+  .stage{
+    width: 90%; 
+}
+  .pane{ 
+    width: 26%; 
+}
+}
+@media screen and (max-width: 768px){
+  .stage{
+    width: 100%;
+  }
+  .controls{
+    width: 80%;
+  }
+  button{
+    font-size: 0.6em;
+    width: 30%;
+  }
+}
