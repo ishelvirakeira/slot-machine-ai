@@ -6,7 +6,10 @@ and betting pattern and return a suggested bet amount. This shows how I use LLMs
 applications with intelligent behavior. I built this project to demonstrate my ability to integrate AI into existing codebases quickly and creatively, 
 transforming a basic game into something more dynamic and adaptive.
 
+Find the live demo at https://slot-machine-ai.onrender.com/.
+
 Tools used: Node.js, Express, OpenAI API, JavaScript, HTML, CSS
+
 
 
 
