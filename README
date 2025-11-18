@@ -1,4 +1,4 @@
-**Project Overview**
+__Project Overview__
 
 This project is a browser-based slot machine game that I extended with an AI-driven “Next Bet Recommendation” feature. 
 The game itself is built with HTML, CSS, and JavaScript, while a Node.js/Express backend uses the OpenAI API to analyze the player’s current balance 
@@ -7,4 +7,5 @@ applications with intelligent behavior. I built this project to demonstrate my a
 transforming a basic game into something more dynamic and adaptive.
 
 Tools used: Node.js, Express, OpenAI API, JavaScript, HTML, CSS
+
 
